@@ -11,7 +11,6 @@ resource "google_compute_instance" "tomcat" {
       size  = 30
       type  = "pd-balanced"
     }
-
     mode = "READ_WRITE"
   }
 
@@ -36,7 +35,7 @@ resource "google_compute_instance" "tomcat" {
       network_tier = "PREMIUM"
     }
 
-    subnetwork = "projects/new-ansible-354213/regions/us-central1/subnetworks/default"
+    subnetwork = "projects/new-ansible-354213/regions/europe-central2/subnetworks/default"
   }
 
   scheduling {
@@ -58,5 +57,5 @@ resource "google_compute_instance" "tomcat" {
   }
 
   tags = ["http-server", "https-server"]
-  zone = "us-central1-a"
+  zone = "europe-central2-b"
 }
