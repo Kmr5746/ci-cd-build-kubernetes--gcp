@@ -1,10 +1,10 @@
 # This code is compatible with Terraform 4.25.0 and versions that are backwards compatible to 4.25.0.
 # For information about validating this Terraform code, see https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/google-cloud-platform-build#format-and-validate-the-configuration
 
-resource "google_compute_instance" "ansible" {
+resource "google_compute_instance" "test-server" {
   boot_disk {
     auto_delete = true
-    device_name = "ansible"
+    device_name = "test-server"
 
     initialize_params {
       image = "projects/Debian-cloud/global/images/Debian GNU/Linux 11 (bullseye)"
