@@ -7,7 +7,7 @@ resource "google_compute_instance" "tomcat" {
     device_name = "tomcat"
 
     initialize_params {
-      image = "projects/centos-cloud/global/images/centos-stream-8-v20230306"
+      image = "projects/Debian-cloud/global/images/Debian GNU/Linux 12 (bookworm)"
       size  = 30
       type  = "pd-balanced"
     }
